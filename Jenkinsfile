@@ -5,7 +5,7 @@ pipeline{
     agent{
         dockerfile{
             label 'agent-00'
-            args '-v /home/osboxes/maven:/home/jenkins/.m2 -e MAVEN_CONFIG=/home/jenkins/.m2'
+            args '-v /home/osboxes/mvn:/home/jenkins/.m2 -e MAVEN_CONFIG=/home/jenkins/.m2'
         }
     }
     options{
